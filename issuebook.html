@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Buy
+{% endblock %}
+
+{% block main %}
+<form action="/buy" method="post">
+  <h1>ISSUE BOOK</h1>
+    <div class="mb-3">
+             <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="email" type="text">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="title" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">GO</button>
+</form>
+{% endblock %}
