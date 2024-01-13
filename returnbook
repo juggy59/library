@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Buy
+{% endblock %}
+
+{% block main %}
+<form action="/addborrower" method="post">
+    <div class="mb-3">
+      Return Book
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="email" type="text">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="title" type="text">
+
+    </div>
+    <button class="btn btn-primary" type="submit">GO</button>
+</form>
+{% endblock %}
